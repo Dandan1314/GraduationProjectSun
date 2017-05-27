@@ -1,0 +1,15 @@
+/*后台页面的后续调整*/
+
+
+/*shell回显框的高度*/
+
+.shellBack {
+	height: 250px!important;
+}
+
+
+/*shell执行按钮的位置*/
+
+.SubShell {
+	line-height: 54px;
+}

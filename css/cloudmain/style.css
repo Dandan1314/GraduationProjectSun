@@ -1,0 +1,465 @@
+/*cloudmain主要布局*/
+
+/*强制浏览器使用W3C标准盒子模型*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: url("../../img/main_bg.jpg") no-repeat;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/*logo and login infomation*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.mainHeader {
+		width: 100%;
+		height: 10%;
+		min-height: 48px;
+	}
+	.logo {
+		display: inline-block;
+		height: 70%;
+		margin-top: 4%;
+		font-family: "华文新魏";
+		font-size: 18px;
+	}
+	.userInfo {
+		display: none;
+	}
+	.mobileUserinfo {
+		position: relative;
+		top: 50%;
+		margin-top: -8px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.mainHeader {
+		width: 100%;
+		height: 8%;
+	}
+	.logo {
+		display: inline-block;
+		height: 70%;
+		margin-top: 10px;
+		font-family: "华文新魏";
+		font-size: 45px;
+	}
+	.userInfo {
+		position: relative;
+		top: 50%;
+		margin-top: -8px;
+		cursor: pointer;
+	}
+	.mobileUserinfo {
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.mainHeader {
+		width: 100%;
+		height: 10%;
+	}
+	.logo {
+		display: inline-block;
+		height: 70%;
+		margin-top: 10px;
+		font-family: "华文新魏";
+		font-size: 30px;
+	}
+	.userInfo {
+		position: relative;
+		top: 50%;
+		margin-top: -8px;
+		cursor: pointer;
+	}
+	.mobileUserinfo {
+		display: none;
+	}
+}
+
+
+/*files category*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.mainLeft {
+		width: 100%;
+		height: 16.669%;
+		min-height: 80px;
+	}
+	.cate {
+		padding-top: 1.2%;
+		width: 25%;
+		height: 50%;
+		float: left;
+		font-size: 16px;
+		line-height: 40px;
+		text-align: center;
+		text-decoration: none;
+		border-top: 1px solid #4A7383;
+		border-bottom: 1px solid #4A7383;
+	}
+	.cate:link,
+	.cate:visited,
+	.cate:active {
+		color: #FFF;
+		text-decoration: none;
+	}
+	.cate:hover {
+		background-color: #3088A7;
+	}
+	.cate:nth-child(8),
+	.progress,
+	.userSpaceInfo {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.mainLeft {
+		display: inline-table;
+		width: 100%;
+		height: 3%;
+	}
+	.cate {
+		display: table-cell;
+		height: 43px;
+		font-size: 18px;
+		line-height: 40px;
+		text-align: center;
+		text-decoration: none;
+		border-top: 1px solid #4A7383;
+		border-bottom: 1px solid #4A7383;
+	}
+	.cate:link,
+	.cate:visited,
+	.cate:active {
+		color: #FFF;
+		text-decoration: none;
+	}
+	.cate:hover {
+		background-color: #3088A7;
+	}
+	.progress,
+	.userSpaceInfo {
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.mainLeft {
+		width: 180px;
+		height: 90%;
+		margin-top: 10px;
+	}
+	.cate {
+		display: block;
+		width: 100%;
+		height: 43px;
+		font-size: 18px;
+		line-height: 40px;
+		padding-left: 50px;
+		text-decoration: none;
+		border-top: 1px solid #4A7383;
+		border-bottom: 1px solid #4A7383;
+	}
+	.cate:link,
+	.cate:visited,
+	.cate:active {
+		color: #FFF;
+		text-decoration: none;
+	}
+	.cate:hover {
+		background-color: #3088A7;
+	}
+	.cate:nth-child(9) {
+		margin-top: 40px;
+	}
+	.progress {
+		width: 80%;
+		height: 20px;
+		margin-top: 100px;
+		margin-left: 10%;
+		cursor: context-menu;
+	}
+	.userSpaceInfo {
+		margin-left: 10%;
+		font-family: "黑体";
+		cursor: context-menu;
+	}
+}
+
+
+/*files list*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+	.mainRight {
+		box-sizing: border-box;
+		position: relative;
+		height: 73.331%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(255, 255, 255, 0.6);
+	}
+	.mainRight .btn,
+	.fileSearch,
+	.btnSort,
+	.fileCounter,
+	.lineName> span:nth-child(2),
+	.fileCkboxAll,
+	.fileInfo> span:nth-child(2),
+	.fileCkbox {
+		display: none;
+	}
+	.dirPosition {
+		padding-top: 5px;
+		color: #0000FF;
+	}
+	.lineName {
+		margin-left: 0;
+		height: 16px;
+	}
+	.lineName span {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.fileList {
+		position: absolute;
+		top: 50px;
+		left: 0;
+		right: 0;
+		bottom: 8px;
+		border: 1px solid #F2F6FD;
+		overflow-y: scroll;
+	}
+	.fileInfo {
+		margin-top: 2px;
+		height: 25px;
+		line-height: 25px;
+	}
+	.fileInfo span {
+		height: 25px;
+		padding-left: 0;
+		padding-right: 0;
+		display: inline-block!important;
+	}
+	.fileName {
+		font-size: 14px;
+	}
+	.fileIcon {
+		width: 30px;
+		height: 23px;
+		margin-left: 2px;
+		margin-top: 2px;
+		background: url(../../img/fileicons.png) no-repeat;
+		background-position-x: 4.3%;
+	}
+	.fileTime,
+	.fileSize {
+		font-size: 13px;
+		white-space: nowrap;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.mainRight {
+		box-sizing: border-box;
+		position: relative;
+		height: 88%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(255, 255, 255, 0.6);
+	}
+	.fileSearch {
+		width: 25%;
+		margin-right: 10px;
+	}
+	.btnSort {
+		display: none;
+	}
+	.dirPosition {
+		margin-top: 10px;
+		color: #0000FF;
+	}
+	.fileCounter {
+		color: #5E5E5E;
+	}
+	.lineName {
+		padding-top: 4px;
+		height: 16px;
+	}
+	.fileCkboxAll {
+		width: 15px;
+		height: 15px;
+		margin-left: 2px !important;
+		margin-top: 0 !important;
+	}
+	.fileList {
+		position: absolute;
+		line-height: 35px;
+		top: 100px;
+		left: 0;
+		right: 0;
+		bottom: 10px;
+		margin-top: 6px;
+		border: 1px solid #F2F6FD;
+		overflow-y: scroll;
+	}
+	.fileInfo {
+		height: 35px;
+	}
+	.fileCkbox {
+		width: 15px;
+		height: 15px;
+		margin-top: 10px !important;
+	}
+	.fileName {
+		margin-left: 4px;
+		font-size: 16px;
+	}
+	.fileIcon {
+		width: 30px;
+		height: 23px;
+		margin-left: 4px;
+		margin-top: 6px;
+		background: url(../../img/fileicons.png) no-repeat;
+		background-position-x: 4.3%;
+	}
+	.fileTime,
+	.fileSize {
+		font-size: 16px;
+	}
+	.fileList .glyphicon {
+		font-size: 18px;
+	}
+}
+
+@media (min-width:992px) {
+	.mainRight {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin-left: 180px;
+		margin-right: 10px;
+		border-radius: 10px 10px 0 0;
+		background-color: rgba(255, 255, 255, 0.6);
+	}
+	.fileSearch {
+		width: 17%;
+	}
+	.dirPosition {
+		margin-top: 10px;
+		color: #0000FF;
+	}
+	.fileCounter {
+		color: #5E5E5E;
+	}
+	.lineName {
+		padding-top: 4px;
+		height: 16px;
+	}
+	.fileCkboxAll {
+		width: 15px;
+		height: 15px;
+		margin-left: 2px !important;
+		margin-top: 0 !important;
+	}
+	.fileList {
+		position: absolute;
+		line-height: 35px;
+		top: 100px;
+		left: 0;
+		right: 0;
+		bottom: 10px;
+		margin-top: 6px;
+		border: 1px solid #F2F6FD;
+		overflow-y: scroll;
+	}
+	.fileInfo {
+		height: 35px;
+	}
+	.fileInfo:hover {
+		background-color: #f6faff;
+	}
+	.fileCkbox {
+		width: 15px;
+		height: 15px;
+		margin-top: 10px !important;
+	}
+	.fileName {
+		margin-left: 4px;
+		font-size: 16px;
+	}
+	.fileName:hover {
+		color: #574AB8;
+	}
+	.fileIcon {
+		width: 30px;
+		height: 23px;
+		margin-left: 4px;
+		margin-top: 6px;
+		background: url(../../img/fileicons.png) no-repeat;
+		background-position-x: 63.8%;
+	}
+	.fileTime,
+	.fileSize {
+		font-size: 16px;
+	}
+	.fileList .glyphicon {
+		font-size: 18px;
+	}
+	.noMore{
+		font-size: 16px;
+		border:1px solid #999999;
+		color: #999999;
+	}
+	.addMore{
+		width: 98%;
+		height: 40px;
+		font-size: 16px;
+		line-height: 40px;
+		margin-left: 1%;
+	}
+}

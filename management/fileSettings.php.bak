@@ -1,0 +1,61 @@
+<?php
+	require("../php/management/unLogin.php");
+?>
+<div class="content_wrapper">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <aside>
+                    <header><i class="fa fa-fw fa-wrench"></i>文件设置</header>
+                    <section>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                	 <form class="form-horizontal" role="form" method="get" action="../server/ajaxReturn.json">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">空间大小</label>
+                                            <div class="col-sm-3">
+                                            	<input type="text" class="form-control" placeholder="空间大小">
+                                            </div>
+                                            <div class="col-sm-7">
+                                            	<button type="button" class="btn btn-primary J_ajaxSubmitBtn">确认修改</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                        <hr/>
+                                     <form class="form-horizontal" role="form" method="get" action="../server/ajaxReturn.json">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">清理回收站</label>
+                                            <div class="col-sm-3">
+                                                <button type="button" class="btn btn-primary J_ajaxSubmitBtn" data-target="../server/ajaxReturn.json">确认清理</button>
+                                            </div>
+                                            <p class="col-sm-7 help-block">点击此处将清理回收站的文件并无法找回，请谨慎操作。</p>
+                                        </div>
+                                    </form>
+                                        <hr/>
+                                    <form class="form-horizontal" role="form" method="get" action="../server/ajaxReturn.json">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">更新文件列表</label>
+                                            <div class="col-sm-3">
+                                                <button type="button" class="btn btn-primary J_ajaxSubmitBtn" data-target="../server/ajaxReturn.json">更新列表</button>
+                                            </div>
+                                            <p class="col-sm-7 help-block">更新全部文件会消耗较多系统资源，请谨慎操作</p>
+                                        </div>
+                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function subMission($from) {
+        return true;
+    }
+</script>
